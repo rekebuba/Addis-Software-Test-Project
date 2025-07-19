@@ -1,6 +1,18 @@
 #!/bin/bash
 set -e
 
+# Load environment variables from .env file
+ENV_FILE=${1:-".env"}
+
+if [ ! -f "$ENV_FILE" ]; then
+  echo "Environment file '$ENV_FILE' not found."
+  exit 1
+fi
+
+set -a
+source "$ENV_FILE"
+set +a
+
 mysql -uroot -p"${MYSQL_ROOT_PASSWORD}" <<-EOSQL
   DROP DATABASE IF EXISTS ${DEV_MYSQL_DB};
   DROP DATABASE IF EXISTS ${TEST_MYSQL_DB};
