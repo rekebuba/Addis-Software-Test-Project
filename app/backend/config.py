@@ -25,6 +25,7 @@ class DevelopmentConfig(Config):
         password = os.getenv("DEV_MYSQL_PWD")
         host = os.getenv("DB_HOST", "localhost")
         db = os.getenv("DEV_MYSQL_DB")
+        print(f"Connecting to database: {db} at {host} with user: {user}")
         if not all([user, password, host, db]):
             raise ValueError("Missing required environment variables for db connection")
 

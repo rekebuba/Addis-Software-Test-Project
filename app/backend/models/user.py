@@ -12,6 +12,7 @@ class User(BaseModel):
     """
 
     __tablename__ = "users"
-    username: Mapped[str] = mapped_column(String(120), unique=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(120), unique=True, nullable=False)
+    email: Mapped[str] = mapped_column(String(120), unique=True, nullable=False)
     password: Mapped[str] = mapped_column(String(120), nullable=False)
     image_path: Mapped[str] = mapped_column(String(255), nullable=True, default=None)

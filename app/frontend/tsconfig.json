@@ -28,7 +28,8 @@
   },
   "include": [
     "src/**/*",
-    "declarations.d.ts"
+    "declarations.d.ts",
+    "src/main.tsx"
   ],
   "exclude": [
     "node_modules",

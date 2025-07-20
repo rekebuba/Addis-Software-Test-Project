@@ -50,7 +50,9 @@ def create_app(config_name: str) -> Flask:
 
     # Import and register blueprints
     from api.v1.views.errors import errors
+    from api.v1.views.auths import auth
 
     app.register_blueprint(errors)
+    app.register_blueprint(auth)
 
     return app

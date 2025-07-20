@@ -14,5 +14,6 @@ class UserSchema(BaseModel):
     )
 
     id: uuid.UUID
-    username: str
+    name: str
+    email: str
     image_path: Optional[str] = None

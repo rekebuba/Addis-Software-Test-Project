@@ -25,6 +25,9 @@ dependencies = [
     "sqlmodel>=0.0.24",
     "types-factory-boy>=0.4.1",
     "types-flask-cors>=6.0.0.20250520",
+    "google-auth>=2.22.0",
+    "google-api-python-client>=2.176.0",
+    "google-auth-oauthlib>=1.2.2",
 ]
 
 [tool.mypy]
