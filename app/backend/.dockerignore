@@ -1,0 +1,15 @@
+.git/
+.cache/
+dist/
+build/
+logs/
+.gitignore
+npm-debug.log
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+profiles/
+*.pyc
+__pycache__/
+requirements.txt

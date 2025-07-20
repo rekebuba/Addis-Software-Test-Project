@@ -1,0 +1,25 @@
+{
+	"name": "devcontainer",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "devcontainer",
+	"workspaceFolder": "/Addis-Software-Test-Project",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"esbenp.prettier-vscode",
+				"cweijan.vscode-mysql-client2",
+				"ms-azuretools.vscode-containers",
+				"streetsidesoftware.code-spell-checker",
+				"ms-python.mypy-type-checker",
+				"charliermarsh.ruff",
+				"tamasfe.even-better-toml",
+				"github.vscode-github-actions",
+				"redhat.vscode-xml"
+				// Add more extensions here
+			]
+		}
+	}
+}
